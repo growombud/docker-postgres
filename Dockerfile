@@ -1,4 +1,4 @@
-FROM postgres:10.6
+FROM postgres:10.9
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -13,7 +13,7 @@ LABEL maintainer="Bryan Laipple <https://github.com/bryan-laipple>" \
 # https://github.com/debezium/docker-images/blob/master/postgres/10/Dockerfile
 # https://github.com/clkao/docker-postgres-plv8/blob/master/10-2/Dockerfile
 
-# Attempting to closely match RDS Postgres 10.6
+# Attempting to closely match RDS Postgres 10.9 (neither plv8 or wal2json are noted to have changed since 10.6)
 # https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 ENV WAL2JSON_COMMIT_ID=9e962bad61ef2bfa53747470bac4d465e71df880 \
     PLV8_VERSION=2.1.2 \
