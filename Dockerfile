@@ -3,10 +3,10 @@ FROM postgres:10.9
 ARG BUILD_DATE
 ARG VCS_REF
 
-LABEL maintainer="Bryan Laipple <https://github.com/bryan-laipple>" \
+LABEL maintainer="Ombud <https://github.com/growombud>" \
       org.label-schema.schema-version="1.0" \
       org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-url="https://github.com/bryan-laipple/docker-postgres" \
+      org.label-schema.vcs-url="https://github.com/growombud/docker-postgres" \
       org.label-schema.vcs-ref=$VCS_REF
 
 # borrowed from
